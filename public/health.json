@@ -1,0 +1,50 @@
+[
+    {
+        "key": "1",
+        "name": "AstraZeneca",
+        "sponsors": "AstraZeneca, University of Oxford, and its spinout company Vaccitech",
+        "sales": "$2 million",
+        "discription": "AstraZeneca is given as two injections, usually into the muscle of the upper arm. The second dose should be given between 4 and 12 weeks after the first dose.Arrangements for the supply of the vaccine are the responsibility of national authorities. For more information about using Vaxzevria, see the package leaflet or talk to a healthcare professional.",
+        "img": "https://e3.365dm.com/20/11/2048x1152/skynews-covid-19-coronavirus_5181340.jpg"
+    },
+    {
+        "key": "2",
+        "name": "Sinovac",
+        "sponsors": "Sinovac Biotech",
+        "sales": "$6.622 million",
+        "discription": "The Beijing-based biopharmaceutical company Sinovac is behind the CoronaVac, an inactivated vaccine.It works by using killed viral particles to expose the body's immune system to the virus without risking a serious disease response.By comparison the Moderna and Pfizer vaccines being developed in the West are mRNA vaccines.",
+        "img": "https://pbs.twimg.com/media/E6um9scVEAEAW4t.jpg"
+    },
+    {
+        "key": "3",
+        "name": "casirivimab",
+        "sponsors": "Regeneron Pharmaceuticals",
+        "sales": "$185.7 million",
+        "discription": "It is possible that REGEN-COV could interfere with your body’s own ability to fight off a future infection of SARS-CoV-2. Similarly, REGEN-COV may reduce your body’s immune response to a vaccine for SARS-CoV-2. Specific studies have not been conducted to address these possible risks. Talk to your healthcare provider if you have any questions.",
+        "img": "https://cdn.yashodahospitals.com/wp-content/uploads/Anti_body_cocktail_drug_banner_mobile.jpg"
+    },
+    {
+        "key": "4",
+        "name": "Moderna",
+        "sponsors": "Moderna",
+        "sales": "$199.872 million",
+        "discription": "Moderna is given as two injections, usually into the muscle of the upper arm. The second dose should be given between 4 and 12 weeks after the first dose.Arrangements for the supply of the vaccine are the responsibility of national authorities. For more information about using Vaxzevria, see the package leaflet or talk to a healthcare professional.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjNEJTUtBGBFD-78ZCRFkRDM-umVhVdDj-PQ&usqp=CAU"
+    },
+    {
+        "key": "5",
+        "name": "Bamlanivimab",
+        "sponsors": "Eli Lilly",
+        "sales": "$871.2 million",
+        "discription": "It is possible that REGEN-COV could interfere with your body’s own ability to fight off a future infection of SARS-CoV-2. Similarly, REGEN-COV may reduce your body’s immune response to a vaccine for SARS-CoV-2. Specific studies have not been conducted to address these possible risks. Talk to your healthcare provider if you have any questions.",
+        "img": "https://www.gannett-cdn.com/-mm-/9e1f6e2ee20f44aa1f3be4f71e9f3e52b6ae2c7e/c=0-110-2121-1303/local/-/media/2020/12/15/USATODAY/usatsports/gettyimages-1282986262.jpg?auto=webp&format=pjpg&width=1200"
+    },
+    {
+        "key": "6",
+        "name": "Veklury",
+        "sponsors": "Gilead Sciences",
+        "sales": "$2.811 billion",
+        "discription": "https://pbs.twimg.com/media/EeFdaAJXgAAy1Pv.jpg:large",
+        "img": "https://k-erc.eu/wp-content/uploads/2020/08/AEN20200724008400320_01_i_P4.jpg"
+    }
+]

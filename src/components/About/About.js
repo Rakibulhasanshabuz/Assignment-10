@@ -1,0 +1,18 @@
+import React from 'react';
+
+const About = () => {
+    return (
+        <div className="container">
+            <h1>COVID-19 vaccines</h1>
+            <p>Equitable access to safe and effective vaccines is critical to ending the COVID-19 pandemic, so it is hugely encouraging to see so many vaccines proving and going into development. WHO is working tirelessly with partners to develop, manufacture and deploy safe and effective vaccines.Safe and effective vaccines are a game-changing tool: but for the foreseeable future we must continue wearing masks, cleaning our hands, ensuring good ventilation indoors, physically distancing and avoiding crowds. </p>
+            <p>Being vaccinated does not mean that we can throw caution to the wind and put ourselves and others at risk, particularly because research is still ongoing into how much vaccines protect not only against disease but also against infection and transmission.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BRKZh_RXJC0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <p>See WHO’s landscape of COVID-19 vaccine candidates for the latest information on vaccines in clinical and pre-clinical development, generally updated twice a week. WHO’s COVID-19 dashboard, updated daily, also features the number of vaccine doses administered globally, with more detail provided on the dedicated COVID-19 vaccination dashboard. At a regional level, there is an AFRO COVID-19 vaccines dashboard and a PAHO COVID-19 vaccines deliveries dashboard.</p>
+            <img width="50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPJ8rUXXXygV0ziVlkkPntDkYRqVXCDvbOcQ&usqp=CAU" alt="" />
+            <p>The proposed attributes and criteria provide considerations for the evaluation and prioritization of COVID-19 candidate vaccines to be considered for further development by WHO. The target audience includes vaccine scientists, product developers, manufacturers, regulators and funding agencies.The attribute and criteria below lay out some of the considerations that structure WHO’s case-by-case assessments of COVID-19 vaccines in the future, with emphasis on prioritization for Phase IIb/III evaluation.Criteria that are considered of major importance in ranking the vaccines are reported in bold in the table. WHO will also provide a scoring guide to promote consistency and predictability of evaluation.</p>
+            <p>The current global nCoV public health emergency underscores the need to accelerate the development of nCoV candidate vaccines. The Working Group on Target Product Profile for vaccines against COVID-19 aims to provide guidance from an end-to-end perspective. The objectives of this group are:To develop a global target product profile (TPP) for vaccines against COVID-19.The TPP will include preferred and minimally acceptable profiles for two vaccines:Human vaccine – for long term protection of persons at high ongoing risk of COVID-19 such as healthcare workers.Human vaccine – for reactive use in outbreak settings with rapid onset of immunity.To prepare and be available for the regular working group calls.To provide technical advice and support the WHO Secretariat through comments and or feedback from stakeholders</p>
+        </div>
+    );
+};
+
+export default About;
