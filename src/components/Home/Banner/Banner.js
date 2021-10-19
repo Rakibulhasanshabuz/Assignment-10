@@ -15,8 +15,8 @@ const Banner = () => {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Covid-19 Vaccine</h3>
+      <p>COVID-19 vaccines also help keep you from getting seriously ill even if you do get COVID-19. Getting vaccinated yourself may also protect people around you, particularly people at increased risk for severe illness from COVID-19.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -27,8 +27,8 @@ const Banner = () => {
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Covid-19 Vaccine</h3>
+      <p>COVID-19 vaccines also help keep you from getting seriously ill even if you do get COVID-19. Getting vaccinated yourself may also protect people around you, particularly people at increased risk for severe illness from COVID-19.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -39,8 +39,8 @@ const Banner = () => {
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>Covid-19 Vaccine</h3>
+      <p>COVID-19 vaccines also help keep you from getting seriously ill even if you do get COVID-19. Getting vaccinated yourself may also protect people around you, particularly people at increased risk for severe illness from COVID-19.</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>  

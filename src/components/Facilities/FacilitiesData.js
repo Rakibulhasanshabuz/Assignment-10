@@ -5,9 +5,9 @@ const FacilitiesData = (props) => {
     const {name, img, sponsors, sales, discription} = props.facilitie
     return (
         <div>
-            <Col className="serviceData-container">
-            <Card style={{height: "700px", width: "600px"}}>
-                <div className="cart-img">
+            <Col className="p-4">
+            <Card style={{height: "650px", width: "600px"}}>
+                <div>
                 <Card.Img style={{width: "500px"}} variant="top" src={img} />
                 </div>
                 <Card.Body>

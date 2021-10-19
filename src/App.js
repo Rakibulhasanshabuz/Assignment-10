@@ -10,6 +10,7 @@ import AuthProvider from './context/AuthProvider';
 import Footer from './components/Shared/Footer/Footer';
 import About from './components/About/About';
 import Facilities from './components/Facilities/Facilities';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -33,9 +34,9 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/booking/:serviceKey">
+          <PrivateRoute path="/booking/:serviceKey">
             <Booking></Booking>
-          </Route>
+          </PrivateRoute>
           <Route path="*">
             <Notfound></Notfound>
           </Route>

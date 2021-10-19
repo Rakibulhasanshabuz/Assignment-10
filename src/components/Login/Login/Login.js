@@ -1,73 +1,85 @@
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
-import initializeAuthentication from "../Firebase/firebase.init";
 
-
-initializeAuthentication();
 
 
 const Login = () => {
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+    const [userDetails, setUserDetails] = useState({
+      email: '',
+      password: ''
+    })
+    const {user, setUser} = useAuth();
 
     const auth = getAuth();
 
-    const handleRegistration = e => {
-        createUserWithEmailAndPassword(auth, email, password)
-        .then(result => {
-            const user = result.user;
-            console.log(user)
-        })
+    const handleSubmit = e => {
         e.preventDefault();
-    }
-
-    const handleEmailChange = e => {
-        setEmail(e.terget.value)
-    }
-
-    const handlePasswordChange = e => {
-        setPassword(e.terget.value);
+        loginWithEmailPass(userDetails.email, userDetails.password)
     }
 
 
-    const {signInUsingGoogle} = useAuth;
-    const handleGoogleSignIn = () => {
-        signInUsingGoogle();
+
+    const handleChange = e => {
+      setUserDetails({ ...userDetails, [e.target.name] : e.target.value });
     }
+
+    const loginWithEmailPass = (email, password) => {
+      createUserWithEmailAndPassword(auth, email, password)
+.then((userCredential) => { 
+  const user = userCredential.user;
+  setUser(user);
+})
+.catch((error) => {
+  const errorCode = error.code;
+  const errorMessage = error.message;
+  console.log(error)
+});
+  }
+
+
+    const {signInUsingGoogle} = useAuth();
     return (
         <div className="mx-5">
-            <h2>pleade Register</h2>
+            <h2 className="text-danger">Please Login</h2>
 
-            <form onSubmit={handleRegistration}>
-  <div className="row mb-3">
-    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
-    <div className="col-sm-10">
-      <input onBlur={handleEmailChange} type="email" className="form-control" id="inputEmail3" required/>
-    </div>
-  </div>
-  <div className="row mb-3">
-    <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
-    <div className="col-sm-10">
-      <input onBlur={handlePasswordChange} type="password" className="form-control" id="inputPassword3" required />
-    </div>
-  </div>
-  <div className="row mb-3">
-    <div className="col-sm-10 offset-sm-2">
-      <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="gridCheck1"/>
-        <label className="form-check-label" htmlFor="gridCheck1">
-          Example checkbox
-        </label>
-      </div>
-    </div>
-  </div>
-  <button type="submit" className="btn btn-primary">Sign in</button>
-</form>
+            <form onSubmit={handleSubmit}>
+               <div className="md:flex md:items-center mb-6">
+                  <div className="w-20">
+                     <label className="block text-gray-500 font-medium mb-1 md:mb-0 pr-4" htmlFor="inline-email">
+                     Email
+                     </label>
+                  </div>
+                  <div>
+                     <input name="email" value={userDetails.email} onChange={handleChange} className="rounded py-2 px-4 " id="inline-email" type="email" placeholder="Enter your email" />
+                  </div>
+               </div>
+               <div>
+               <div>
+                     <label htmlFor="inline-password">
+                     Password
+                     </label>
+                  </div>
+                  <div>
+                     <input name="password" value={userDetails.password} onChange={handleChange} className=" rounded bg-gray-200 border-2 py-2 px-4" id="inline-email" type="password" placeholder="Enter your password" />
+                  </div>
+               </div>
+               <div className="px-4 py-3">
+               <button
+               className="btn btn-success"
+                  type="submit"
+               >
+                  Submit
+               </button>
+            </div>
+            </form>
 
         <br /><br /><br />
 
-            <button onClick={handleGoogleSignIn} className="btn btn-warning">Google sign In</button>
+        <div>----------OR----------</div>
+        <br />
+
+            <button onClick={signInUsingGoogle} className="btn btn-warning mb-5"><i className="fab fa-google"></i> Google sign In</button>
         </div>
     );
 };

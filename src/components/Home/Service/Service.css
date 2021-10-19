@@ -1,6 +1,6 @@
 .service{
-    background-color: rgb(203, 248, 248);
     border-radius: 20px;
+    box-shadow: 15px 15px 5px rgb(224, 223, 223);
 }
 .service img{
     width: 100%;
