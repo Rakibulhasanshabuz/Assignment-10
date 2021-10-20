@@ -3,10 +3,8 @@ import React, { useState } from 'react';
 import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from '../../../hooks/useAuth';
 
-
-
-const Login = () => {
-    const [userDetails, setUserDetails] = useState({
+const Registration = () => {
+   const [userDetails, setUserDetails] = useState({
       email: '',
       password: ''
     })
@@ -29,13 +27,13 @@ const Login = () => {
       createUserWithEmailAndPassword(auth, email, password)
 .then((userCredential) => { 
   const user = userCredential.user;
-  setLoginUser(user)
-   history.push(redirect_uri);
+  setLoginUser(user);
+  history.push(redirect_uri);
 });
   }
 
 
-    const {signInUsingGoogle} = useAuth();
+  const {signInUsingGoogle} = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home'
@@ -46,10 +44,9 @@ const Login = () => {
          history.push(redirect_uri);
       })
     }
-
     return (
         <div className="mx-5">
-            <h2 className="text-danger">Please Login</h2>
+            <h2 className="text-danger">Please Registration</h2>
 
             <form onSubmit={handleSubmit}>
                <div className="md:flex md:items-center mb-6">
@@ -82,17 +79,16 @@ const Login = () => {
             </div>
             </form>
             <br />
-            <p>New to This Site? <Link to="/registration"><button className="btn btn-danger">Create Account</button></Link></p>
-
+            <p>Already Have an Account? <Link to="/login"><button className="btn btn-primary">Log In</button></Link></p>
 
         <br /><br /><br />
 
         <div>----------OR----------</div>
         <br />
 
-            <button onClick={handleGoogleLogin} className="btn btn-warning mb-5"><i className="fab fa-google"></i> Google sign In</button>
+            <button onClick={handleGoogleLogin} className="btn btn-info mb-5"><i className="fab fa-google"></i> Google sign In</button>
         </div>
     );
 };
 
-export default Login;
+export default Registration;

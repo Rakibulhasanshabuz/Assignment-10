@@ -11,6 +11,7 @@ import Footer from './components/Shared/Footer/Footer';
 import About from './components/About/About';
 import Facilities from './components/Facilities/Facilities';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
+import Registration from './components/Login/Registration/Registration';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/registration">
+            <Registration></Registration>
           </Route>
           <PrivateRoute path="/booking/:serviceKey">
             <Booking></Booking>

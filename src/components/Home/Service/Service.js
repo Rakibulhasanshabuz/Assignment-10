@@ -11,7 +11,7 @@ const Service = ({service}) => {
             <h3>Sponsors: {sponsors}</h3>
             <h3>Sales: {sales}</h3>
             <Link to={`/booking/${key}`}>
-                <button className="btn btn-success">Regestration for {name}</button>
+                <button className="btn regester-btn">Regestration for {name}</button>
             </Link>
         </div>
     );
